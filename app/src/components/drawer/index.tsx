@@ -8,7 +8,25 @@ import { categories } from "widgets/categories";
 import { WidgetType } from "widgets/list";
 import Icon from "components/icon";
 
-const categoriesWithWidgets = groupBy(widgets, (widget) => widget.category);
+const allowedWidgetTypes = [
+  "date-time",
+  "search",
+  "text",
+  "image",
+  "counter",
+  "day-countdown",
+  "qr-code",
+  "website",
+];
+
+const visibleWidgets = widgets.filter((widget) =>
+  allowedWidgetTypes.includes(widget.widgetType)
+);
+
+const categoriesWithWidgets = groupBy(
+  visibleWidgets,
+  (widget) => widget.category
+);
 
 const Drawer = ({ addWidgetToLayout, onWidgetAdded }: Props) => {
   const { t } = useTranslation();

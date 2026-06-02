@@ -16,7 +16,15 @@
       "data": {},
       "options": {
         "pattern": "https://www.google.com/search?q=%s",
-        "title": "Google"
+        "title": "Google Search"
+      },
+      "meta": {}
+    },
+    "image-01": {
+      "type": "image",
+      "data": {},
+      "options": {
+        "url": "/backgrounds/bg-06.jpg"
       },
       "meta": {}
     },
@@ -33,10 +41,19 @@
     "text-week": {
       "type": "text",
       "data": {
-        "content": "本週重點\n\n・整理正在做的工具方向\n・確認哪些專案要改成私人\n・把桌面首頁調整成自己每天會看的樣子"
+        "content": "本週重點\n\n・整理正在做的工具方向\n・確認哪些專案要改成私人\n・把桌面首頁調整成每天會看的樣子"
       },
       "options": {
         "headline": "This Week"
+      },
+      "meta": {}
+    },
+    "day-countdown-01": {
+      "type": "day-countdown",
+      "data": {},
+      "options": {
+        "eventName": "下一個版本整理",
+        "eventDate": "2026-06-30"
       },
       "meta": {}
     },
@@ -69,33 +86,6 @@
         "headline": "Note"
       },
       "meta": {}
-    },
-    "day-countdown-01": {
-      "type": "day-countdown",
-      "data": {},
-      "options": {
-        "title": "下一個版本整理",
-        "date": "2026-06-30"
-      },
-      "meta": {}
-    },
-    "counter-01": {
-      "type": "counter",
-      "data": {
-        "value": 0
-      },
-      "options": {
-        "headline": "本週完成"
-      },
-      "meta": {}
-    },
-    "image-01": {
-      "type": "image",
-      "data": {},
-      "options": {
-        "url": "/backgrounds/bg-06.jpg"
-      },
-      "meta": {}
     }
   },
   "layout": {
@@ -124,7 +114,7 @@
           "h": 4,
           "x": 0,
           "y": 5,
-          "i": "text-today",
+          "i": "image-01",
           "moved": false,
           "static": false
         },
@@ -133,7 +123,7 @@
           "h": 4,
           "x": 0,
           "y": 9,
-          "i": "text-week",
+          "i": "text-today",
           "moved": false,
           "static": false
         },
@@ -142,6 +132,24 @@
           "h": 4,
           "x": 0,
           "y": 13,
+          "i": "text-week",
+          "moved": false,
+          "static": false
+        },
+        {
+          "w": 1,
+          "h": 3,
+          "x": 0,
+          "y": 17,
+          "i": "day-countdown-01",
+          "moved": false,
+          "static": false
+        },
+        {
+          "w": 1,
+          "h": 4,
+          "x": 0,
+          "y": 20,
           "i": "text-work",
           "moved": false,
           "static": false
@@ -150,7 +158,7 @@
           "w": 1,
           "h": 4,
           "x": 0,
-          "y": 17,
+          "y": 24,
           "i": "text-life",
           "moved": false,
           "static": false
@@ -159,35 +167,8 @@
           "w": 1,
           "h": 3,
           "x": 0,
-          "y": 21,
-          "i": "text-note",
-          "moved": false,
-          "static": false
-        },
-        {
-          "w": 1,
-          "h": 2,
-          "x": 0,
-          "y": 24,
-          "i": "day-countdown-01",
-          "moved": false,
-          "static": false
-        },
-        {
-          "w": 1,
-          "h": 2,
-          "x": 0,
-          "y": 26,
-          "i": "counter-01",
-          "moved": false,
-          "static": false
-        },
-        {
-          "w": 1,
-          "h": 4,
-          "x": 0,
           "y": 28,
-          "i": "image-01",
+          "i": "text-note",
           "moved": false,
           "static": false
         }
@@ -196,16 +177,16 @@
         {
           "w": 3,
           "h": 2,
-          "x": 3,
+          "x": 6,
           "y": 0,
           "i": "date-time-01",
           "moved": false,
           "static": false
         },
         {
-          "w": 4,
+          "w": 5,
           "h": 2,
-          "x": 6,
+          "x": 9,
           "y": 0,
           "i": "search-01",
           "moved": false,
@@ -213,8 +194,17 @@
         },
         {
           "w": 4,
+          "h": 3,
+          "x": 14,
+          "y": 0,
+          "i": "image-01",
+          "moved": false,
+          "static": false
+        },
+        {
+          "w": 4,
           "h": 4,
-          "x": 3,
+          "x": 6,
           "y": 2,
           "i": "text-today",
           "moved": false,
@@ -223,7 +213,7 @@
         {
           "w": 4,
           "h": 4,
-          "x": 7,
+          "x": 10,
           "y": 2,
           "i": "text-week",
           "moved": false,
@@ -231,8 +221,17 @@
         },
         {
           "w": 4,
+          "h": 3,
+          "x": 14,
+          "y": 3,
+          "i": "day-countdown-01",
+          "moved": false,
+          "static": false
+        },
+        {
+          "w": 4,
           "h": 4,
-          "x": 3,
+          "x": 6,
           "y": 6,
           "i": "text-work",
           "moved": false,
@@ -241,44 +240,17 @@
         {
           "w": 4,
           "h": 4,
-          "x": 7,
+          "x": 10,
           "y": 6,
           "i": "text-life",
           "moved": false,
           "static": false
         },
         {
-          "w": 3,
-          "h": 3,
-          "x": 11,
-          "y": 0,
-          "i": "image-01",
-          "moved": false,
-          "static": false
-        },
-        {
-          "w": 3,
-          "h": 3,
-          "x": 11,
-          "y": 3,
-          "i": "day-countdown-01",
-          "moved": false,
-          "static": false
-        },
-        {
-          "w": 3,
-          "h": 2,
-          "x": 11,
+          "w": 4,
+          "h": 4,
+          "x": 14,
           "y": 6,
-          "i": "counter-01",
-          "moved": false,
-          "static": false
-        },
-        {
-          "w": 3,
-          "h": 2,
-          "x": 11,
-          "y": 8,
           "i": "text-note",
           "moved": false,
           "static": false

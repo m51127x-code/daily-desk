@@ -8,7 +8,7 @@ import { categories } from "widgets/categories";
 import { WidgetType } from "widgets/list";
 import Icon from "components/icon";
 
-const allowedWidgetTypes = [
+const allowedWidgetTypes: WidgetType[] = [
   "date-time",
   "search",
   "text",
@@ -19,7 +19,7 @@ const allowedWidgetTypes = [
   "website",
 ];
 
-const visibleWidgets = widgets.filter((widget) =>
+const visibleWidgets = Object.values(widgets).filter((widget) =>
   allowedWidgetTypes.includes(widget.widgetType)
 );
 
@@ -28,19 +28,23 @@ const categoriesWithWidgets = groupBy(
   (widget) => widget.category
 );
 
+const visibleCategories = categories.filter(
+  (category) => categoriesWithWidgets[category]?.length > 0
+);
+
 const Drawer = ({ addWidgetToLayout, onWidgetAdded }: Props) => {
   const { t } = useTranslation();
   return (
     <div className="" style={{ marginLeft: "-2rem", marginRight: "-2rem" }}>
       <div className="visually-hidden">{t("widget.common.headline")}</div>
-      {categories.map((category) => (
+      {visibleCategories.map((category) => (
         <div key={category} className="mb-6 w-full">
           <h3 className="mb-4 px-6 text-4 font-bold">
             {t(`widget.category.${category}`)}
           </h3>
 
           <div className="space-y-1">
-            {categoriesWithWidgets[category].map(
+            {categoriesWithWidgets[category]?.map(
               ({ widgetType: widget }: WidgetProperties) => (
                 <button
                   key={widget}

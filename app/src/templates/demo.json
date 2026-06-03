@@ -29,14 +29,6 @@
       },
       "meta": {}
     },
-    "image-01": {
-      "type": "image",
-      "data": {},
-      "options": {
-        "url": "https://images.pexels.com/photos/162240/bull-calf-heifer-ko-162240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      },
-      "meta": {}
-    },
     "text-today": {
       "type": "text",
       "data": {
@@ -68,7 +60,7 @@
     "text-work": {
       "type": "text",
       "data": {
-        "content": "工作入口\n\n・Vercel\n・GitHub\n・Google Drive\n・ChatGPT\n・客戶問題紀錄\n・待回覆事項"
+        "content": "工作入口\n\n・Vercel\n・GitHub\n・Google Drive\n・ChatGPT\n・客戶問題紀錄"
       },
       "options": {
         "headline": "Work"
@@ -78,20 +70,10 @@
     "text-life": {
       "type": "text",
       "data": {
-        "content": "生活入口\n\n・行事曆\n・記帳\n・購物清單\n・旅行靈感\n・健康紀錄\n・重要日期"
+        "content": "生活入口\n\n・行事曆\n・記帳\n・購物清單\n・旅行靈感"
       },
       "options": {
         "headline": "Life"
-      },
-      "meta": {}
-    },
-    "text-note": {
-      "type": "text",
-      "data": {
-        "content": "今天只要前進一點點就好。\n\n這個桌面不是拿來逼自己更忙，而是幫我把事情放回可控範圍。"
-      },
-      "options": {
-        "headline": "Note"
       },
       "meta": {}
     }
@@ -170,31 +152,13 @@
           "i": "text-life",
           "moved": false,
           "static": false
-        },
-        {
-          "w": 1,
-          "h": 3,
-          "x": 0,
-          "y": 29,
-          "i": "text-note",
-          "moved": false,
-          "static": false
-        },
-        {
-          "w": 1,
-          "h": 4,
-          "x": 0,
-          "y": 32,
-          "i": "image-01",
-          "moved": false,
-          "static": false
         }
       ],
       "desktop": [
         {
           "w": 3,
           "h": 2,
-          "x": 4,
+          "x": 5,
           "y": 0,
           "i": "date-time-01",
           "moved": false,
@@ -203,7 +167,7 @@
         {
           "w": 5,
           "h": 2,
-          "x": 7,
+          "x": 8,
           "y": 0,
           "i": "search-01",
           "moved": false,
@@ -211,26 +175,17 @@
         },
         {
           "w": 3,
-          "h": 3,
-          "x": 12,
+          "h": 2,
+          "x": 13,
           "y": 0,
           "i": "day-countdown-01",
           "moved": false,
           "static": false
         },
         {
-          "w": 3,
-          "h": 3,
-          "x": 15,
-          "y": 0,
-          "i": "image-01",
-          "moved": false,
-          "static": false
-        },
-        {
           "w": 4,
           "h": 4,
-          "x": 4,
+          "x": 5,
           "y": 2,
           "i": "text-today",
           "moved": false,
@@ -239,45 +194,36 @@
         {
           "w": 7,
           "h": 5,
-          "x": 8,
-          "y": 3,
+          "x": 9,
+          "y": 2,
           "i": "website-main",
-          "moved": false,
-          "static": false
-        },
-        {
-          "w": 3,
-          "h": 5,
-          "x": 15,
-          "y": 3,
-          "i": "text-work",
           "moved": false,
           "static": false
         },
         {
           "w": 4,
           "h": 4,
-          "x": 4,
+          "x": 5,
           "y": 6,
           "i": "text-waiting",
           "moved": false,
           "static": false
         },
         {
-          "w": 4,
+          "w": 3,
           "h": 3,
-          "x": 8,
-          "y": 8,
-          "i": "text-life",
+          "x": 9,
+          "y": 7,
+          "i": "text-work",
           "moved": false,
           "static": false
         },
         {
-          "w": 3,
+          "w": 4,
           "h": 3,
           "x": 12,
-          "y": 8,
-          "i": "text-note",
+          "y": 7,
+          "i": "text-life",
           "moved": false,
           "static": false
         }
